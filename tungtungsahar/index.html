@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <script>
+      // ts true 💔😭✌
+      window.gnMathIsTheBestGameSiteEver = {
+        "ancestorOrigins": {},
+        "href": "https://html5.gamedistribution.com/rvvASMiM/ad14e488375b4e41af52a4617f6837d0/index.html?gd_sdk_referrer_url=https%3A%2F%2Fgamedistribution.com%2Fgames%2Fitalian-brainrot-obby-parkour%2F&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL2dhbWVkaXN0cmlidXRpb24uY29tL2dhbWVzL2l0YWxpYW4tYnJhaW5yb3Qtb2JieS1wYXJrb3VyLyIsInBhcmVudERvbWFpbiI6ImdhbWVkaXN0cmlidXRpb24uY29tIiwidG9wRG9tYWluIjoiZ2FtZWRpc3RyaWJ1dGlvbi5jb20iLCJoYXNJbXByZXNzaW9uIjpmYWxzZSwibG9hZGVyRW5hYmxlZCI6dHJ1ZSwiaG9zdCI6Imh0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tIiwidmVyc2lvbiI6IjEuNS4xNyJ9",
+        "origin": "https://html5.gamedistribution.com",
+        "protocol": "https:",
+        "host": "html5.gamedistribution.com",
+        "hostname": "html5.gamedistribution.com",
+        "port": "",
+        "pathname": "/rvvASMiM/ad14e488375b4e41af52a4617f6837d0/index.html",
+        "search": "?gd_sdk_referrer_url=https%3A%2F%2Fgamedistribution.com%2Fgames%2Fitalian-brainrot-obby-parkour%2F&gd_zone_config=eyJwYXJlbnRVUkwiOiJodHRwczovL2dhbWVkaXN0cmlidXRpb24uY29tL2dhbWVzL2l0YWxpYW4tYnJhaW5yb3Qtb2JieS1wYXJrb3VyLyIsInBhcmVudERvbWFpbiI6ImdhbWVkaXN0cmlidXRpb24uY29tIiwidG9wRG9tYWluIjoiZ2FtZWRpc3RyaWJ1dGlvbi5jb20iLCJoYXNJbXByZXNzaW9uIjpmYWxzZSwibG9hZGVyRW5hYmxlZCI6dHJ1ZSwiaG9zdCI6Imh0bWw1LmdhbWVkaXN0cmlidXRpb24uY29tIiwidmVyc2lvbiI6IjEuNS4xNyJ9",
+        "hash": ""
+      }
+
+      const originalFetch = window.fetch;
+      window.fetch = function (...args) {
+        if (args[0].includes("html5.api.gamedistribution.com/main.min.js")) {
+          args[0] = "main.min.js";
+        }
+        return originalFetch.apply(this, args);
+      };
+
+      const originalOpen = XMLHttpRequest.prototype.open;
+      XMLHttpRequest.prototype.open = function (method, url, ...rest) {
+        if (url.includes("html5.api.gamedistribution.com/main.min.js")) {
+          url = "main.min.js";
+        }
+        return originalOpen.call(this, method, url, ...rest);
+      };
+  </script>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Italian Brainrot Obby Parkour</title>
+        	<style>
+		html,
+		body {
+			background-image: url("Build.jpg");
+			background-position: center; /* Center the image */
+  			background-repeat: no-repeat; /* Do not repeat the image */
+  			background-size: cover; /* Resize the background image to cover the entire container */
+			width: 100%;
+			height: 100%;
+			overflow: visible;
+			padding: 0;
+			margin: 0;
+		}
+
+		div#gameContainer {
+			background: transparent !important;
+			position: absolute;
+		}
+
+		div#gameContainer canvas {
+			position: absolute;
+		}
+
+		div#gameContainer canvas[data-pixel-art="true"] {
+			position: absolute;
+			image-rendering: optimizeSpeed;
+			image-rendering: -webkit-crisp-edges;
+			image-rendering: -moz-crisp-edges;
+			image-rendering: -o-crisp-edges;
+			image-rendering: crisp-edges;
+			image-rendering: -webkit-optimize-contrast;
+			image-rendering: optimize-contrast;
+			image-rendering: pixelated;
+			-ms-interpolation-mode: nearest-neighbor;
+		}
+		.loadingOut{ 
+				width:250px; 
+				position:fixed; 
+				left:50%; 
+				top:calc(50% - 8px);
+				transform:translate(-50%);
+				 border: 2px solid white;
+				height: 14px;
+		}
+		.centered {
+ 		 position: fixed;
+		top: 50%;
+		left: 50%;
+		margin-top: -150px;
+		margin-left: -250px;
+		width: 500px;
+		}
+	</style>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">	
+  </head>
+  <body class="dark">
+    <div id="unity-container" class="unity-desktop">
+      <canvas id="unity-canvas"></canvas>
+    </div>
+    <div id="loading-cover" style="display:none;">
+      <div id="unity-loading-bar">
+        <div id="unity-logo"><img src="logo.png"></div>
+        <div id="unity-progress-bar-empty" style="display: none;">
+          <div id="unity-progress-bar-full"></div>
+        </div>
+        <div class="spinner"></div>
+      </div>
+    </div>
+    <script>
+      const hideFullScreenButton = "";
+      const buildUrl = "Build";
+      const loaderUrl = buildUrl + "/cee3bfd5589651a8b16e2a12b8abe5b3.loader.js";
+      const config = {
+        dataUrl: buildUrl + "/d4b128a28e1915d11cd8474a0c6dfee2.data.unityweb",
+        frameworkUrl: buildUrl + "/c30773f72f027ef15b844a10f412e4c8.framework.js.unityweb",
+        codeUrl: buildUrl + "/f3d4e5039fc929c427d8576f2eb315fd.wasm.unityweb",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Cursora Labs O.Ü",
+        productName: "Italian Brainrot Obby Parkour",
+        productVersion: "0.1e",
+        webglContextAttributes: {
+    		preserveDrawingBuffer: true,
+		powerPreference: "high-performance",
+  	},
+      };
+
+      const container = document.querySelector("#unity-container");
+      const canvas = document.querySelector("#unity-canvas");
+      const loadingCover = document.querySelector("#loading-cover");
+      const progressBarEmpty = document.querySelector("#unity-progress-bar-empty");
+      const progressBarFull = document.querySelector("#unity-progress-bar-full");
+      const spinner = document.querySelector('.spinner');
+
+      const canFullscreen = (function() {
+        for (const key of [
+            'exitFullscreen',
+            'webkitExitFullscreen',
+            'webkitCancelFullScreen',
+            'mozCancelFullScreen',
+            'msExitFullscreen',
+          ]) {
+          if (key in document) {
+            return true;
+          }
+        }
+        return false;
+      }());
+
+        if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+            container.className = "unity-mobile";
+            config.devicePixelRatio = 1.5;
+        } else {
+            
+        }
+      
+        canvas.style.background = "url('" + buildUrl + "/7f2bed876ac1773a4891704db0c58bb3.jpg') center / cover";
+        loadingCover.style.display = "";
+
+        // Explicitly setting the background image using JavaScript
+        document.body.style.backgroundImage = "url('Build.jpg')";
+        document.body.style.backgroundPosition = "center";
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundSize = "cover";
+	    var myGameInstance = null;
+	  
+        const script = document.createElement("script");
+        script.src = loaderUrl;
+
+        script.onload = () => 
+        {
+            createUnityInstance(canvas, config, (progress) => {
+                spinner.style.display = "none";
+                progressBarEmpty.style.display = "";
+                progressBarFull.style.width = `${100 * progress}%`;
+            }).then((unityInstance) => {
+                myGameInstance = unityInstance;
+                loadingCover.style.display = "none";
+        
+                // Now that Unity is fully loaded, it's safe to interact with it
+                //checkDevice(); // Ensure this function is called here
+            }).catch((message) => {
+                alert(message);
+            });
+        };
+
+        document.addEventListener("visibilitychange", function() {
+        if (document.hidden) {
+          UnityPauseGame();
+        } else {
+          UnityResumeGame();
+        }
+		});
+
+		function UnityPauseGame() {
+			myGameInstance.SendMessage('VisibilityManager', 'OnGameInVisible');
+		}
+
+		function UnityResumeGame() {
+			myGameInstance.SendMessage('VisibilityManager', 'OnGameVisible');
+		}
+	  
+      document.body.appendChild(script);
+    </script>
+  </body>
+</html>
