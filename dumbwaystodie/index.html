@@ -44,7 +44,7 @@
               },
               set(newSrc) {
                 let newUrl = newSrc;
-                if (newSrc.includes("html5.api.gamedistribution.com/main.min.js")) {
+                if ((newUrl+"").includes("html5.api.gamedistribution.com/main.min.js")) {
                   newUrl = "main.min.js";
                 }
                 srcValue = newUrl;
